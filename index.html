@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function() {
+      var saved = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (saved) {
+        document.documentElement.setAttribute("data-theme", saved);
+      } else if (prefersDark) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <title>jana | معرض أعمال</title>
+  <meta name="description" content="معرض أعمال رقمية بهوية هادئة وراقية.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-group">
+        <a class="brand" href="index.html" aria-label="الصفحة الرئيسية">
+          <span class="brand-name">jana</span>
+          <span class="brand-role">مطور واجهات ومصمم UI/UX</span>
+        </a>
+      </div>
+      <div class="header-controls">
+        <button class="theme-toggle nav-theme-toggle" type="button" aria-label="التبديل للوضع الليلي" title="الوضع الليلي">🌙</button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="فتح القائمة">
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <a class="nav-link is-active" href="index.html">الرئيسية</a>
+        <a class="nav-link" href="projects.html">المشاريع</a>
+        <a class="nav-link" href="contact.html">التواصل</a>
+        <button class="theme-toggle nav-theme-toggle" type="button" aria-label="التبديل للوضع الليلي" title="الوضع الليلي">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <span class="hero-kicker" data-reveal>معرض أعمال 2026</span>
+        <h1 class="hero-title" id="hero-title" data-reveal>أحوّل الأفكار إلى تجارب رقمية استثنائية.</h1>
+        <p class="hero-role" data-reveal>أصمّم، أبتكر، وأطوّر مشاريع تجمع بين الإبداع والتقنية، لتتحوّل الأفكار من مجرد تصوّرات إلى أعمال تُرى وتُجرّب.</p>
+        <p class="hero-text" data-reveal>اكتشف أعمالي، وتعرّف على ما يمكن للإبداع أن يصنعه.</p>
+        <div class="hero-actions" data-reveal>
+          <a class="button button-primary" href="projects.html">استكشف أعمالي</a>
+          <a class="button button-outline" href="contact.html">لنتواصل معًا</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-strip" data-reveal>
+          <div class="contact-chip">
+            <span class="contact-label">الاسم</span>
+            <strong class="contact-value">jana</strong>
+          </div>
+          <div class="contact-chip">
+            <span class="contact-label">المجال</span>
+            <strong class="contact-value">تطوير واجهات · تصميم تجربة مستخدم</strong>
+          </div>
+          <div class="contact-chip">
+            <span class="contact-label">التواصل</span>
+            <strong class="contact-value">jnyh405@gmail.com</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section-heading" data-reveal>
+          <span class="section-kicker">أعمال مختارة</span>
+          <h2 class="section-title">ثلاثة مشاريع تلخص أسلوب عملي</h2>
+          <p class="section-text">انتقاء محدود يساعد الزائر على التركيز.</p>
+        </header>
+
+        <div class="project-grid featured-grid" data-reveal>
+          <article class="project-card" data-reveal>
+            <div class="project-frame">
+              <img src="assets/images/matcha2.webp" alt="ماتشايا - واجهة موقع مقهى ماتشا" width="800" height="1000" loading="lazy">
+              <span class="project-number">01</span>
+            </div>
+            <div class="project-head">
+              <h3 class="project-title">ماتشايا</h3>
+              <span class="project-category">تطوير ويب · تجربة مستخدم</span>
+            </div>
+            <p class="project-description">
+              موقع تجربة لمقهى ماتشا يعرض القائمة والنكهات وشهادات العملاء. يتيح الطلب مباشرة عبر واتساب بتصميم دافئ وهوية بصرية واضحة.
+            </p>
+            <a class="project-link" href="https://raspy-limit-0e07.jnyh405.workers.dev">عرض المشروع</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-frame">
+              <img src="assets/images/academy.webp" alt="أكاديمية مهارات المستقبل - واجهة دورات تعليمية" width="800" height="1000" loading="lazy">
+              <span class="project-number">02</span>
+            </div>
+            <div class="project-head">
+              <h3 class="project-title">أكاديمية مهارات المستقبل</h3>
+              <span class="project-category">التعليم الإلكتروني · الذكاء الاصطناعي</span>
+            </div>
+            <p class="project-description">
+              أكاديمية تعليمية تقدم دورات في الذكاء الاصطناعي والبرمجة والتقنية لمختلف المستويات. تشمل باقات للطلاب والموظفين والمطورين مع مدربين متخصصين.
+            </p>
+            <a class="project-link" href="https://solitary-butterfly-f19d.jnyh405.workers.dev">عرض المشروع</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-frame">
+              <img src="assets/images/gift.webp" alt="إيش أهديهم؟ - أداة اختيار الهدايا الذكية" width="800" height="1000" loading="lazy">
+              <span class="project-number">03</span>
+            </div>
+            <div class="project-head">
+              <h3 class="project-title">إيش أهديهم؟</h3>
+              <span class="project-category">أدوات تفاعلية · الذكاء الاصطناعي</span>
+            </div>
+            <p class="project-description">
+              أداة ذكية لاختيار الهدية حسب المناسبة والشخص والميزانية ومكان الشراء. تتضمن فلاتر لحظية وعجلة عشوائية لاقتراحات غير متوقعة.
+            </p>
+            <a class="project-link" href="https://royal-king-b152.jnyh405.workers.dev">عرض المشروع</a>
+          </article>
+        </div>
+
+        <div class="section" style="text-align: center; padding-top: 10px;">
+          <a class="button button-outline" href="projects.html">عرض جميع المشاريع</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div data-reveal>
+            <header class="section-heading">
+              <span class="section-kicker">النهج</span>
+              <h2 class="section-title">هوية بصرية تبرز الصور لا التشويش.</h2>
+              <p class="section-text">
+                أستخدم مساحات فارغة، وخطوطًا واضحة، وتوافقًا دقيقًا للألوان لتبدو كل صورة كقطعة في كتالوج. هذا النهج يمنح كل مشروع هدوءًا ووضوحًا، ويجعل التفاصيل مهمة.
+              </p>
+            </header>
+            <div class="about-list">
+              <div class="about-item">
+                <span class="about-icon">١</span>
+                <div>
+                  <strong>هيكل واضح</strong>
+                  <p>تنقل مباشر، عناوين مختصرة، وبطاقات متسقة.</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <span class="about-icon">٢</span>
+                <div>
+                  <strong>أداء وسرعة</strong>
+                  <p>تحميل خفيف وتجربة سلسة على جميع الأجهزة.</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <span class="about-icon">٣</span>
+                <div>
+                  <strong>محتوى عربي</strong>
+                  <p>تصميم وتنسيق مناسبان للقراءة من اليمين إلى اليسار.</p>
+                </div>
+              </div>
+            </div>
+            <div class="skills-grid" data-reveal>
+              <div class="skill-card">
+                <strong>تصميم واجهات</strong>
+                <span>UI Design</span>
+              </div>
+              <div class="skill-card">
+                <strong>تطوير واجهات</strong>
+                <span>Frontend</span>
+              </div>
+              <div class="skill-card">
+                <strong>تجربة مستخدم</strong>
+                <span>UX Design</span>
+              </div>
+              <div class="skill-card">
+                <strong>الذكاء الاصطناعي</strong>
+                <span>AI Integration</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image" data-reveal style="text-align:center;">
+            <svg width="420" height="520" viewBox="0 0 420 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="زخرفة مجردة">
+              <rect x="20" y="20" width="340" height="460" rx="30" stroke="var(--border)" stroke-width="1.5"/>
+              <rect x="60" y="80" width="220" height="140" rx="12" stroke="rgba(216,164,143,0.2)" stroke-width="1.2"/>
+              <rect x="60" y="250" width="150" height="90" rx="10" stroke="rgba(216,164,143,0.15)" stroke-width="1.2"/>
+              <rect x="220" y="250" width="140" height="70" rx="10" stroke="rgba(216,164,143,0.15)" stroke-width="1.2"/>
+              <circle cx="240" cy="390" r="44" stroke="var(--accent)" stroke-width="1.5"/>
+              <circle cx="150" cy="410" r="28" stroke="rgba(216,164,143,0.25)" stroke-width="1.2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 jana. جميع الحقوق محفوظة.</span>
+      <div>
+        <a href="projects.html">المشاريع</a> ·
+        <a href="contact.html">التواصل</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

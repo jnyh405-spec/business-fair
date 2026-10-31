@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function() {
+      var saved = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (saved) {
+        document.documentElement.setAttribute("data-theme", saved);
+      } else if (prefersDark) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <title>المشاريع | jana</title>
+  <meta name="description" content="شبكة من ستة مشاريع مختارة.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-group">
+        <a class="brand" href="index.html" aria-label="الصفحة الرئيسية">
+          <span class="brand-name">jana</span>
+          <span class="brand-role">مطور واجهات ومصمم UI/UX</span>
+        </a>
+      </div>
+      <div class="header-controls">
+        <button class="theme-toggle nav-theme-toggle" type="button" aria-label="التبديل للوضع الليلي" title="الوضع الليلي">🌙</button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="فتح القائمة">
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <a class="nav-link" href="index.html">الرئيسية</a>
+        <a class="nav-link is-active" href="projects.html">المشاريع</a>
+        <a class="nav-link" href="contact.html">التواصل</a>
+        <button class="theme-toggle nav-theme-toggle" type="button" aria-label="التبديل للوضع الليلي" title="الوضع الليلي">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container">
+        <header class="section-heading" data-reveal>
+          <span class="section-kicker">الأعمال</span>
+          <h1 class="page-title">المشاريع المختارة</h1>
+          <p class="page-intro">
+            شبكة من ستة أعمال تجمع التصميم، والتطوير، ومحتوى عربي واضح. كل بطاقة تتضمن وصفًا مختصرًا ورابطًا مباشرًا للمشروع.
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="project-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-frame">
+              <img src="assets/images/matcha2.webp" alt="ماتشايا - واجهة موقع مقهى ماتشا" width="800" height="1000" loading="lazy">
+              <span class="project-number">01</span>
+            </div>
+            <div class="project-head">
+              <h2 class="project-title">ماتشايا</h2>
+              <span class="project-category">تطوير ويب · تجربة مستخدم</span>
+            </div>
+            <p class="project-description">
+              موقع تجربة لمقهى ماتشا يعرض القائمة والنكهات وشهادات العملاء. يتيح الطلب مباشرة عبر واتساب بتصميم دافئ وهوية بصرية واضحة.
+            </p>
+            <a class="project-link" href="https://raspy-limit-0e07.jnyh405.workers.dev">عرض المشروع</a>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-frame">
+              <img src="assets/images/academy.webp" alt="أكاديمية مهارات المستقبل - واجهة دورات تعليمية" width="800" height="1000" loading="lazy">
+              <span class="project-number">02</span>
+            </div>
+            <div class="project-head">
+              <h2 class="project-title">أكاديمية مهارات المستقبل</h2>
+              <span class="project-category">التعليم الإلكتروني · الذكاء الاصطناعي</span>
+            </div>
+            <p class="project-description">
+              أكاديمية تعليمية تقدم دورات في الذكاء الاصطناعي والبرمجة والتقنية لمختلف المستويات. تشمل باقات للطلاب والموظفين والمطورين مع مدربين متخصصين.
+            </p>
+            <a class="project-link" href="https://solitary-butterfly-f19d.jnyh405.workers.dev">عرض المشروع</a>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-frame">
+              <img src="assets/images/gift.webp" alt="إيش أهديهم؟ - أداة اختيار الهدايا الذكية" width="800" height="1000" loading="lazy">
+              <span class="project-number">03</span>
+            </div>
+            <div class="project-head">
+              <h2 class="project-title">إيش أهديهم؟</h2>
+              <span class="project-category">أدوات تفاعلية · الذكاء الاصطناعي</span>
+            </div>
+            <p class="project-description">
+              أداة ذكية لاختيار الهدية حسب المناسبة والشخص والميزانية ومكان الشراء. تتضمن فلاتر لحظية وعجلة عشوائية لاقتراحات غير متوقعة.
+            </p>
+            <a class="project-link" href="https://royal-king-b152.jnyh405.workers.dev">عرض المشروع</a>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-frame">
+              <img src="assets/images/cat2.webp" alt="مملكة المواء الأنيق - صالون متنقل للعناية بالقطط" width="800" height="1000" loading="lazy">
+              <span class="project-number">04</span>
+            </div>
+            <div class="project-head">
+              <h2 class="project-title">مملكة المواء الأنيق</h2>
+              <span class="project-category">تصميم واجهات · تجربة مستخدم</span>
+            </div>
+            <p class="project-description">
+              موقع لصالون متنقل للعناية بالقطط في جدة. يقدم قص الشعر، تشذيب الأظافر، وجلسات استرخاء مع حجز موعد عبر واتساب.
+            </p>
+            <a class="project-link" href="https://elegant-meow-kingdom.lovable.app">عرض المشروع</a>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-frame">
+              <img src="assets/images/capsule.webp" alt="TimeCapsule - تجربة السفر عبر الحقب الزمنية" width="800" height="1000" loading="lazy">
+              <span class="project-number">05</span>
+            </div>
+            <div class="project-head">
+              <h2 class="project-title">TimeCapsule</h2>
+              <span class="project-category">تجارب تفاعلية · تطوير ويب</span>
+            </div>
+            <p class="project-description">
+              تجربة تفاعلية للسفر عبر الحقب الزمنية مع شريط اختيار الأعوام. تتغير الواجهة والألوان والأصوات حسب الحقبة وتتيح حفظ رسائل في كبسولة.
+            </p>
+            <a class="project-link" href="https://icy-tooth-4d9e.jnyh405.workers.dev">عرض المشروع</a>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-frame">
+              <img src="assets/images/cv.webp" alt="بطاقة السيرة الذاتية - بطاقة هوية مهنية رقمية" width="800" height="1000" loading="lazy">
+              <span class="project-number">06</span>
+            </div>
+            <div class="project-head">
+              <h2 class="project-title">بطاقة السيرة الذاتية</h2>
+              <span class="project-category">الهوية الرقمية · تصميم</span>
+            </div>
+            <p class="project-description">
+              بطاقة رقمية مختصرة تجمع المسمى والخبرات ومعلومات التواصل في تصميم واضح. تسهل مشاركة الهوية المهنية بأسلوب أنيق وسريع.
+            </p>
+            <a class="project-link" href="https://jana-hassan-cv.netlify.app">عرض المشروع</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 jana. جميع الحقوق محفوظة.</span>
+      <div>
+        <a href="index.html">الرئيسية</a> ·
+        <a href="contact.html">التواصل</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

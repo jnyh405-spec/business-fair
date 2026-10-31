@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function() {
+      var saved = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (saved) {
+        document.documentElement.setAttribute("data-theme", saved);
+      } else if (prefersDark) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <title>التواصل | jana</title>
+  <meta name="description" content="معلومات التواصل.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-group">
+        <a class="brand" href="index.html" aria-label="الصفحة الرئيسية">
+          <span class="brand-name">jana</span>
+          <span class="brand-role">مطور واجهات ومصمم UI/UX</span>
+        </a>
+      </div>
+      <div class="header-controls">
+        <button class="theme-toggle nav-theme-toggle" type="button" aria-label="التبديل للوضع الليلي" title="الوضع الليلي">🌙</button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="فتح القائمة">
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <a class="nav-link" href="index.html">الرئيسية</a>
+        <a class="nav-link" href="projects.html">المشاريع</a>
+        <a class="nav-link is-active" href="contact.html">التواصل</a>
+        <button class="theme-toggle nav-theme-toggle" type="button" aria-label="التبديل للوضع الليلي" title="الوضع الليلي">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container">
+        <header class="section-heading" data-reveal>
+          <span class="section-kicker">التواصل</span>
+          <h1 class="page-title">لنعمل معًا</h1>
+          <p class="page-intro">
+            أرحب بطلبات التصميم، وتطوير الواجهات، وتحسين تجربة المستخدم. يمكنك التواصل عبر البريد أو واتساب، أو إرسال رسالة مباشرة من هذا النموذج.
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="contact-page">
+          <div class="contact-card" data-reveal>
+            <div class="contact-detail">
+              <span class="contact-icon">@</span>
+              <div>
+                <div class="contact-label">البريد الإلكتروني</div>
+                <a class="contact-value" href="mailto:jnyh405@gmail.com">jnyh405@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">WS</span>
+              <div>
+                <div class="contact-label">واتساب</div>
+                <a class="contact-value" href="https://wa.me/966501431387">0501431387</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">JD</span>
+              <div>
+                <div class="contact-label">المنطقة</div>
+                <span class="contact-value">جدة · عمل عن بُعد</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">IG</span>
+              <div>
+                <div class="contact-label">وسائل أخرى</div>
+                <span class="contact-value">Instagram · X · TikTok</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form contact-card" data-reveal>
+            <div class="form-field">
+              <label for="name">الاسم</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div class="form-field">
+              <label for="email">البريد الإلكتروني</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div class="form-field">
+              <label for="message">الرسالة</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button class="button button-primary" type="submit">إرسال</button>
+            <p class="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 jana. جميع الحقوق محفوظة.</span>
+      <div>
+        <a href="index.html">الرئيسية</a> ·
+        <a href="projects.html">المشاريع</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
